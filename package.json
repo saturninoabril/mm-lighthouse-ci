@@ -1,0 +1,30 @@
+{
+  "name": "mm-lighthouse-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lighthouserc.js",
+  "scripts": {
+    "test:auth-page": "lhci autorun --config=config_authenticated.js",
+    "test:auth-page-disable-reset": "lhci autorun --config=config_authenticated_disable_reset.js",
+    "test:not-auth-page": "lhci autorun --config=config_not_authenticated.js",
+    "server": "node server.js",
+    "wizard": "lhci wizard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saturninoabril/mm-lighthouse-ci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saturninoabril/mm-lighthouse-ci/issues"
+  },
+  "homepage": "https://github.com/saturninoabril/mm-lighthouse-ci#readme",
+  "dependencies": {
+    "@lhci/cli": "0.6.1",
+    "@lhci/server": "0.6.1",
+    "dotenv": "8.2.0",
+    "mysql2": "2.2.5",
+    "puppeteer": "^5.5.0"
+  }
+}
